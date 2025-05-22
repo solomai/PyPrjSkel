@@ -1,0 +1,107 @@
+# Python
+# ====================================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.env
+.env
+.venv-linux
+.venv-win
+# Conda environment
+# This is crucial for Conda projects. It ignores the actual environment directory.
+# The 'MY_PROJECT_NAME' part might need to be adjusted if your environment name is different.
+# If you keep environments outside the project folder, this might not be strictly needed
+# but is good practice if you ever create one inside.
+.conda/
+.conda-env/
+envs/ # Common location for environments if not in default Conda location
+*.sqlite3 # SQLite databases (e.g., from Django development)
+
+# IDE / Editor
+# ====================================================================================
+.vscode/
+# Exclude VS Code workspace settings which are specific to your machine
+# You may want to include settings.json if it contains shared project configuration,
+# but exclude if it contains personal paths or profiles.
+# For example, if you include settings.json, you might exclude .vscode/settings.json manually
+# by commenting out the line above and adding:
+# .vscode/settings.json # (only if it contains machine-specific paths)
+.vscode/*.log
+.vscode/*.bak
+.vscode/.history/ # VS Code local history
+*.sublime-project
+*.sublime-workspace
+.idea/ # IntelliJ / PyCharm projects
+
+# Operating System Files
+# ====================================================================================
+.DS_Store # macOS
+.Trashes # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+Desktop.ini # Windows
+
+# Build artifacts and temporary files
+# ====================================================================================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+dist/
+build/
+*.egg-info/
+.coverage
+.cache/
+
+# Jupyter Notebook files
+# ====================================================================================
+.ipynb_checkpoints/
+# Jupyter's output files might be large and should often be ignored if they are regenerated
+# *.ipynb # Uncomment if you want to ignore all Jupyter Notebook output files.
+         # Be careful, this will ignore the notebooks themselves!
+         # You might want to ignore only specific outputs or empty output cells.
+
+# Data files (optional, depends on project)
+# ====================================================================================
+# /data/ # Uncomment if your project creates or uses large local data files not part of version control
+# *.csv # Uncomment if you want to ignore all CSV files
+# *.json # Uncomment if you want to ignore all JSON files
+# *.npy # Example for numpy arrays
+
+# Logs and debugging
+# ====================================================================================
+logs/
+debug.log
+error.log
+
+# Private / Sensitive files
+# ====================================================================================
+*.key
+*.pem
+*.pfx
+*.jks
+credentials.json
+secrets.py # Python file containing secrets
+config.py # Often contains sensitive configuration, if so, ignore it
+# Alternatively, use a .env file and ignore it:
+.env
+.flaskenv
+
+# Docker
+# ====================================================================================
+.dockerignore
+Dockerfile.bak
+
+# Node.js (if applicable, e.g., for frontend)
+# ====================================================================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Custom user files
+# ====================================================================================

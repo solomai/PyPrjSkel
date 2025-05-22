@@ -1,0 +1,9 @@
+name: MY_PROJECT_NAME # The name of your Conda environment
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python>=3.13 # Specify the exact Python version
+  - pip
+  - pip: # Pip dependencies go here
+    - colorama
